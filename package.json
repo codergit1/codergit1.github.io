@@ -1,0 +1,19 @@
+{
+  "name": "studentportal",
+  "version": "1.0.0",
+  "description": "Student Portal Web Application created by : Dina, Bates, Aida, Soundarya",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codergit1/studentportal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codergit1/studentportal/issues"
+  },
+  "homepage": "https://github.com/codergit1/studentportal#readme"
+}
