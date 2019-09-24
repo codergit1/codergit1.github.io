@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/codergit1/studentportal/issues"
   },
-  "homepage": "https://github.com/codergit1/studentportal#readme"
+  "homepage": "https://github.com/codergit1/studentportal#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
