@@ -12,7 +12,7 @@
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Highschool Student Application</title>
+    <title>student application</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -33,21 +33,46 @@
             margin-bottom: 30px;
         }
 
+        .container-1 {
+            background: #FFF;
+            height: 100%;
+            overflow: hidden;
+        }
+
         .container {
             /* align-content: center; */
+            /* position: relative; */
 
             width: 800px;
             height: 550px;
-            padding: 0px;
-        }
+            /* padding: 0px; */
 
-        .container-1 {
-            background: #FFF;
+            margin-left: 10px;
+            float: left;
+
         }
 
         .container-2 {
             padding: 0px 10px 10px 10px;
             margin: 10px;
+            float: right;
+
+        }
+
+        .container-login {
+            margin-right: 10px;
+            margin-top: 10%;
+            float: right;
+        }
+
+        .form-group {
+            width: 500px;
+
+        }
+
+        .form-check {
+            width: 30%;
+
         }
 
         .btn-outline-primary {
@@ -90,67 +115,6 @@
             border-color: #34435E;
 
         }
-
-        .form-control {
-            width: 100%;
-
-
-            /* height: ; */
-        }
-
-        /* .modal-content {
-
-            width: 500px;
-            height: 500px;
-
-        } */
-
-        modal-dialog {
-
-            /* max-width: 800px; */
-            /* max-height: auto; */
-            margin: 2.90 rem auto;
-        }
-
-
-        /* .modal-dialog {
-    max-width: 500px;
-    margin: 3.75rem auto;
-    margin-top: 3.75rem;
-    margin-right: auto;
-    margin-bottom: 3.75rem;
-    margin-left: auto;
-}
-
-        } */
-
-        .main-container {
-            top: 0;
-
-
-            height: 100%;
-            top: 0;
-            width: 100%;
-            height: 470px;
-            padding: 5%;
-            float: left;
-            padding-top: 10%;
-            padding-bottom: 10%;
-
-        }
-
-        .rightContain {
-            /* float: right; */
-            width: 50%;
-            justify-content: center;
-
-        }
-
-        .btnPosition {
-            margin-top: 5%;
-            margin-left: 40%;
-
-        }
     </style>
 
     <!-- Just an image -->
@@ -175,17 +139,15 @@
             <ul class="navbar-nav">
 
                 <!-- <button type="button" class="btn btn-outline-primary mr-sm-2"> -->
-                <button id="tab1" href="#signin" type="button"
-                    class="btn modalwindow btn-default float-right btn-outline-primary ml-sm-1 mr-sm-2 text-center"
-                    data-toggle="modal">
-                    Students
+                <button type="button"
+                    class="btn btn-default float-right btn-outline-primary ml-sm-1 mr-sm-2 text-center">
+                    Login
                     <span class="sr-only">(current)</span>
                 </button>
 
-                <button type="button" class="btn btn-default-1 btn-primary-new my-1 my-sm-0 float-right text-center"
-                    data-toggle="modal">
+                <button type="button" class="btn btn-default-1 btn-primary-new my-1 my-sm-0 float-right text-center">
 
-                    Teachers
+                    Register
                     <span class=" sr-only">(current)</span>
                 </button>
             </ul>
@@ -194,6 +156,7 @@
     </nav>
 
     <div class="container-1">
+
         <!-- Carousel -->
 
         <div class="container rounded">
@@ -223,6 +186,28 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </div>
+
+        <div class="container-login">
+            <form>
+                <div class="form-group">
+                    <label for="inputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                        placeholder="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword1">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkStore">
+                    <label class="form-check-label" for="checkStore">Remember </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+
         </div>
 
 
@@ -277,7 +262,6 @@
 
         <!--  -->
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
