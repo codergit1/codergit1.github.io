@@ -56,23 +56,51 @@
             padding: 0px 10px 10px 10px;
             margin: 10px;
             float: right;
-
         }
 
         .container-login {
-            margin-top: 10%;
+            margin-top: 8%;
+            margin-right: 29px;
             float: right;
         }
 
         .form-group {
             width: 350px;
             margin-right: 100px;
+        }
 
+        .form-control:focus,
+        .form-control.focus,
+        .form-control:active {
+            box-shadow: 0 0 0 0.2rem #b0ecfc;
+            border-color: transparent;
         }
 
         .form-check {
             width: 60%;
+        }
 
+        .btn-login {
+            color: white;
+            background-color: slateblue;
+            position: absolute;
+            margin-left: 100px;
+            border-radius: 10em;
+            width: 10%;
+        }
+
+        .btn-login:focus,
+        .btn-login.focus,
+        .btn-login:active {
+            box-shadow: 0 0 0 0.2rem rgb(137, 120, 231);
+            color: slateblue;
+        }
+
+        .btn-login:hover,
+        .btn-login.hover {
+            color: slateblue;
+            background-color: white;
+            border-color: slateblue;
         }
 
         .btn-outline-primary {
@@ -105,7 +133,6 @@
 
         .btn-default-1:hover,
         .btn-default-1:focus,
-        .btn-default-1:active,
         .open .dropdown-toggle.btn-default-1 {
 
             background-color: #34435E;
@@ -115,8 +142,15 @@
             border-color: #34435E;
             outline: none !important;
 
-            box-shadow: none !important;
+            /* box-shadow: none !important; */
             border: 1px solid #ccc !important;
+        }
+
+        /* important button focus */
+        .btn-default-1:focus,
+        .btn-default-1.focus,
+        .btn-default-1:active {
+            box-shadow: 0 0 0 0.2rem rgb(162, 228, 236);
         }
 
         /* .btn-default-1:active,
@@ -125,6 +159,11 @@
             /* here configure as your needs */
 
         /* } */
+
+        #link {
+            color: rgb(15, 178, 219);
+            text-decoration: none;
+        }
     </style>
 
     <!-- Just an image -->
@@ -196,6 +235,7 @@
         <div class="container-login">
             <form>
                 <div class="form-group">
+                    <h2>Login</h2>
                     <label for="inputEmail1">Email address</label>
                     <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
                         placeholder="email">
@@ -203,17 +243,17 @@
 
                 <div class="form-group">
                     <label for="inputPassword1">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="password">
                 </div>
 
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="checkStore">
                     <p> <label class="form-check-label" for="checkStore">Remember
-                        </label>&nbsp;&nbsp;&nbsp;<a>Forgot password?</a></p>
+                        </label>&nbsp;&nbsp;&nbsp;<a id="link" href="#">Forgot password?</a></p>
 
 
                 </div>
-                <button type="submit" class="btn btn-primary shadow-none">Login</button>
+                <button type="submit" class="btn btn-login">Login</button>
             </form>
 
         </div>
