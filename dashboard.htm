@@ -89,6 +89,26 @@
             border-color: #34435E;
 
         }
+
+        .container {
+            width: 1500px
+        }
+
+        .dashboard {
+            /* margin-right: 15px; */
+            float: left;
+            width: 300px;
+        }
+
+        .timetable {
+            float: right;
+            top: 0;
+            right: 0;
+        }
+
+        .tablehead {
+            text-align: center;
+        }
     </style>
     <!-- Just an image -->
     <nav style="background-color: #00AFCA"
@@ -129,7 +149,10 @@
     <section id="main">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+
+                <!-- Dashboard left menu -->
+
+                <div class="dashboard col-md-3">
                     <div class="list-group">
                         <a href="dashboard.htm" style="background-color: #00AFCA;border-color: #34435E"
                             class="list-group-item active main-color-bg">
@@ -143,18 +166,20 @@
                                 aria-hidden="true"></span> Log Out</a>
                     </div>
 
-                    <div class="well">
+                    <!-- <div class="well">
 
-                    </div>
+                        </div> -->
                 </div>
-                <div class="col-md-9">
+
+                <!-- timetable -->
+                <div class="col align-self-end">
 
                     <div class="panel panel-default">
                         <div class="panel-heading main-color-bg">
                             <h3 class="panel-title">Welcome</h3>
                         </div>
                         <table class="calendar table table-bordered">
-                            <thead>
+                            <thead class="tablehead">
                                 <tr>
                                     <th>Days/Time</th>
 
