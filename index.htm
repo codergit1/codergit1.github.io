@@ -66,12 +66,13 @@
         }
 
         .form-group {
-            width: 500px;
+            width: 350px;
+            margin-right: 100px;
 
         }
 
         .form-check {
-            width: 30%;
+            width: 60%;
 
         }
 
@@ -115,6 +116,14 @@
             border-color: #34435E;
 
         }
+
+        .btn-default-1:active,
+        .btn-default-1:focus {
+            border: 0.1em solid #E0FBFC;
+            border-color: brown;
+            /* here configure as your needs */
+
+        }
     </style>
 
     <!-- Just an image -->
@@ -136,21 +145,16 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <!-- <ul class="navbar-nav"> -->
 
-                <!-- <button type="button" class="btn btn-outline-primary mr-sm-2"> -->
-                <button type="button"
-                    class="btn btn-default float-right btn-outline-primary ml-sm-1 mr-sm-2 text-center">
-                    Login
-                    <span class="sr-only">(current)</span>
-                </button>
+            <!-- <button type="button" class="btn btn-outline-primary mr-sm-2"> -->
 
-                <button type="button" class="btn btn-default-1 btn-primary-new my-1 my-sm-0 float-right text-center">
+            <button type="button" class="btn btn-default-1 btn-primary-new my-1 my-sm-0 float-right text-center">
 
-                    Register
-                    <span class=" sr-only">(current)</span>
-                </button>
-            </ul>
+                Register
+                <span class=" sr-only">(current)</span>
+            </button>
+            <!-- </ul> -->
         </div>
 
     </nav>
@@ -203,7 +207,10 @@
 
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="checkStore">
-                    <label class="form-check-label" for="checkStore">Remember </label>
+                    <p> <label class="form-check-label" for="checkStore">Remember
+                        </label>&nbsp;&nbsp;&nbsp;<a>Forgot password?</a></p>
+
+
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
